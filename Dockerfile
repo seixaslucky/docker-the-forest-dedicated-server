@@ -10,6 +10,7 @@ ENV WINEPREFIX=/winedata/WINE64 \
     PUID=0 \
     PGID=0 \
     SERVER_STEAM_ACCOUNT_TOKEN="" \
+    SERVER_PASSWORD="" \
     ALWAYS_UPDATE_ON_START=1
 
 VOLUME ["/theforest", "/steamcmd", "/winedata"]
