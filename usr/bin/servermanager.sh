@@ -62,6 +62,7 @@ function installServer() {
     cp /server.cfg.example $CONFIGFILE_PATH
     sed -i -e "s/###serverSteamAccount###/$SERVER_STEAM_ACCOUNT_TOKEN/g" $CONFIGFILE_PATH
     sed -i -e "s/###serverpassword###/$SERVER_PASSWORD/g" $CONFIGFILE_PATH
+    sed -i -e "s/###servername###/teletobas-the-floresta/g" $CONFIGFILE_PATH
     sed -i -e "s/###RANDOM###/$RANDOM/g" $CONFIGFILE_PATH
     sed -i -e "s/[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}\.[0-9]\{1,3\}/$(hostname -I)/g" $CONFIGFILE_PATH
     bash /steamcmd/steamcmd.sh +runscript /steamcmdinstall.txt
